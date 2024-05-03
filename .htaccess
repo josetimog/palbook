@@ -1,0 +1,42 @@
+<IfModule mod_rewrite.c>
+    # Enable Rewriting
+    RewriteEngine on
+    # RewriteBase /final_project/
+
+    # Redirect profile/#/username to profile.php?id=#&username=username
+    RewriteRule ^/?profile/([a-zA-Z0-9]+)/([a-zA-Z0-9-]+)$ profile.php?id=$1&username=$2 [L]
+
+    # Redirect friends/#/username to friends.php?id=#&username=username
+    RewriteRule ^/?friends/([a-zA-Z0-9]+)/([a-zA-Z0-9-]+)$ friends.php?id=$1&username=$2 [L]
+
+    # Redirect friendRequests/#/username to friendRequests.php?id=#&username=username
+    RewriteRule ^/?friendRequests/([a-zA-Z0-9]+)/([a-zA-Z0-9-]+)$ friendRequests.php?id=$1&username=$2 [L]
+
+    # Redirect post/#/username to post.php?id=#&username=username
+    RewriteRule ^/?post/([a-zA-Z0-9]+)/([a-zA-Z0-9-]+)$ post.php?id=$1&username=$2 [L]
+
+    # Redirect post/#/username to post.php?id=#&username=username
+    RewriteRule ^/?edit/([a-zA-Z0-9]+)/([a-zA-Z0-9-]+)$ edit.php?post_id=$1&username=$2 [L]
+
+    # Redirect editProfile/#/username to editProfile.php?id=#&username=username
+    RewriteRule ^/?editProfile/([a-zA-Z0-9]+)/([a-zA-Z0-9-]+)$ editProfile.php?id=$1&username=$2 [L]
+
+    # Redirect photos/#/username to photos.php?id=#&username=username
+    RewriteRule ^/?photos/([a-zA-Z0-9]+)/([a-zA-Z0-9-]+)$ photos.php?id=$1&username=$2 [L]
+
+    # Redirect manageUsers/#/username to manageUsers.php?id=#&username=username
+    RewriteRule ^/?manageUsers/([a-zA-Z0-9]+)/([a-zA-Z0-9-]+)$ manageUsers.php?id=$1&username=$2 [L]
+
+    # Redirect createUser/#/username to createUser.php?id=#&username=username
+    RewriteRule ^/?createUser/([a-zA-Z0-9]+)/([a-zA-Z0-9-]+)$ createUser.php?id=$1&username=$2 [L]
+
+    # Redirect editUser/#/username to editUser.php?id=#&username=username
+    RewriteRule ^/?editUser/([a-zA-Z0-9]+)/([a-zA-Z0-9-]+)$ editUser.php?id=$1&username=$2 [L]
+
+    # Redirect settings/#/username to settings.php?id=#&username=username
+    RewriteRule ^/?settings/([a-zA-Z0-9]+)/([a-zA-Z0-9-]+)$ settings.php?id=$1&username=$2 [L]
+
+    # Redirect search/#/username to search.php?id=#&username=username
+    RewriteRule ^/?search/([a-zA-Z0-9]+)/([a-zA-Z0-9-]+)$ search.php?id=$1&username=$2 [L]
+
+</IfModule>

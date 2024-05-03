@@ -1,0 +1,231 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f3f3f7;
+}
+
+#loginSection {
+    padding: 100px 100px;
+}
+
+#loginLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0866ff;
+    height: 234px;
+    font-size: 40px;
+}
+
+#formAndNewAccount {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px #c9cbcd;
+    padding: 20px;
+    border-radius: 16px;
+    width: 50%;
+}
+
+#formAndNewAccount h1 {
+    margin-bottom: 5px;
+}
+
+input[type=text], [type=password], [type=email] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border-color: #dddfe2;
+}
+
+#loginform input:focus-visible, #signupform input:focus-visible {
+    background-color: #f0f2f5;
+    outline: 1px solid #0f6ef9;
+    border-radius: 8px;
+}
+
+#btnLogin, #btnSignUp{
+    color: #ffffff;
+    background-color: #0f6ef9;
+    padding: 10px;
+    font-size: large;
+    border-radius: 10px;
+    border-color: #0f6ef9;
+    width: 100%;
+    margin: 6px 0px 16px;
+}
+
+#btnLogin:hover, #btnSignUp:hover {
+    background-color: rgba(8, 102, 255, 0.9);
+    border-color: rgba(8, 102, 255, 0.9);
+    cursor: pointer;
+}
+
+#createAccountDiv, #existingAccountDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnCreateAccount, #btnExistingAccount{
+    background-color: #42b72a;
+    color: #ffffff;
+    padding: 12px;
+    font-size: large;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+#btnCreateAccount:hover, #btnExistingAccount:hover {
+    background-color: rgba(66, 183, 42, 0.9);
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*********************************** PROFILE PAGE ***************************************************/
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    background-color: orange;
+}
+
+@media screen and (max-width:700px) {
+    #loginSection {
+        padding: 0px 25px;
+    }
+
+    #formAndNewAccount {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+}
+
+.custom-card {
+    margin-bottom: 15px;
+}
+
+.selected {
+    border: 2px solid green;
+}
+
+.text-xs {
+    font-size: 12px;
+}
+
+/* Add profile pic button */
+.main-profile-pic {
+    position: relative;
+}
+
+/* Extra Small Devices*/
+@media screen and (min-width:398px) {
+    .add-profile-pic {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        border: 3px solid white;
+        display: block;
+        bottom: 25px;
+        right: 100px;
+    }
+}
+
+
+/* Small Devices */
+@media screen and (min-width:576px) {
+
+    .add-profile-pic {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        border: 3px solid white;
+        display: block;
+        bottom: 30px;
+        right: 100px;
+    }
+}
+
+/* Medium Devices */
+
+@media screen and (min-width: 768px) {
+
+    .add-profile-pic {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        border-radius: 15px;
+        border: 3px solid white;
+        display: block;
+        bottom: 20px;
+        right: 60px;
+    }
+}
+
+/* Large Devices */
+
+@media screen and (min-width:992px) {
+
+    .add-profile-pic {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        border: 3px solid white;
+        display: block;
+        bottom: 20px;
+        right: 80px;
+    }
+}
+
+/* Extra Large Devices */
+
+@media screen and (min-width:1200px) {
+
+    .add-profile-pic {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        border: 3px solid white;
+        display: block;
+        bottom: 20px;
+        right: 100px;
+    }
+}
+
+
+
+
+
